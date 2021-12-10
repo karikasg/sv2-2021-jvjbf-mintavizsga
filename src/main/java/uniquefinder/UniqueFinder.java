@@ -11,11 +11,11 @@ public class UniqueFinder {
             throw new IllegalArgumentException("Text is null.");
         }
 
-        if (text.length()>0) {
-            result.add(text.charAt(0));
-        }
+//        if (text.length()>0) {
+//            result.add(text.charAt(0));
+//        }
 
-        for (int i = 1; i < text.length(); i++) {
+        for (int i = 0; i < text.length(); i++) {
             if (!result.contains(text.charAt(i))) {
                 result.add(text.charAt(i));
             }
