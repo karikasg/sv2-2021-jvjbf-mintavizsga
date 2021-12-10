@@ -59,11 +59,9 @@ public class Aquarium {
     }
 
     public Fish getSmallestFish() {
-        int min = 999;
-        Fish minFish = null;
+        Fish minFish = aquarium.get(0);
         for (Fish fish : aquarium) {
-            if (fish.getWeight() < min) {
-                min = fish.getWeight();
+            if (fish.getWeight() < minFish.getWeight()) {
                 minFish = fish;
             }
         }
